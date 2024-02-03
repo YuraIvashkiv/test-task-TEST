@@ -73,3 +73,123 @@ ul {
     background-image: linear-gradient(to right, rgba(13, 208, 186, 1), rgba(42, 134, 229, 1));
     color: currentColor
 }
+
+.after-title {
+    font-family: 'Red Hat Display';
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+
+    color: #707070;
+}
+
+/* STYLE SIDEBAR  */
+
+.sidebar-title {
+    font-family: 'Red Hat Display';
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: 0.5px;
+
+    color: #FCFCFC;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
+
+.sidebar-text {
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 0.6;
+    letter-spacing: 0.5px;
+
+    color: #FCFCFC;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
+
+/* STYLE OF LIST ARTICLES */
+.title-secondary {
+    font-size: 20px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+
+    color: #707070;
+}
+
+.title-list {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.5px;
+
+    color: #2A86E5;
+}
+
+.text-list {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+
+    color: #B3B3B1;
+}
+
+/* STYLE OF FOOTER  */
+.footer-logo {
+    font-size: 30px;
+    line-height: 0.8;
+    letter-spacing: 0.5px;
+
+    color: #000000;
+}
+
+.footer-text {
+    font-size: 16px;
+    line-height: 1.4;
+    letter-spacing: 0.5px;
+
+    color: #0DD0BA;
+}
+
+.footer-title {
+    font-size: 24px;
+
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
+
+.footer-link {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
+
+.footer-list {
+    list-style: inside;
+    padding-left: 0;
+
+    color: #FFFFFF;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
+
+.footer-copy {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.3;
+    letter-spacing: 0.5px;
+
+    color: #FFFFFF;
+    color: green;
+    /* ПОТІМ ВИДАЛИТИ */
+}
