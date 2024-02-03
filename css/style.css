@@ -27,7 +27,26 @@ ul {
 }
 
 /* STYLE OF HEADER */
+/* style of top-header  */
+.top-header {
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, rgba(13, 208, 186, 1), rgba(42, 134, 229, 1))
+}
+
+.top-list {
+    display: flex;
+}
+
+.top-item+.top-item {
+    margin-left: 23px;
+}
+
 .top-header .link {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
     font-family: 'Red Hat Display';
     font-size: 14px;
     font-weight: 500;
@@ -35,9 +54,28 @@ ul {
     letter-spacing: 0.5px;
 
     color: #FFFFFF;
-
     color: brown;
     /* ПОТІМ ВИДАЛИТИ */
+}
+
+.top-header .svg-list {
+    display: flex;
+}
+
+.svg-list .svg-link {
+    display: block;
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* style of main-header  */
+
+.main-header>.main-list {
+    display: flex;
+}
+
+.main-item+.main-item {
+    margin-left: 28px;
 }
 
 .main-header .link {
