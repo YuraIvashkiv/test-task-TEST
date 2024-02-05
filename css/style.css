@@ -90,9 +90,8 @@ ul {
     color: #FFFFFF;
 }
 
-.svg-list .icon-svg {
+.svg-list .icon-right {
     fill: currentColor;
-    margin-right: 0;
 }
 
 /* style of main-header  */
@@ -182,6 +181,11 @@ ul {
     font-weight: 600;
 }
 
+.article-sidebar {
+    display: flex;
+    align-items: flex-start;
+}
+
 .section-article .title {
     margin-bottom: 20px;
     font-family: 'Red Hat Display';
@@ -210,21 +214,25 @@ ul {
 .sidebar {
     width: 300px;
     height: 600px;
+    margin-left: auto;
+
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+
+    border-radius: 20px;
+    background-image: url('../images/image-sidebar.png'), linear-gradient(rgba(252, 183, 56, 1), rgba(239, 121, 60, 1));
 }
 
 .sidebar-title {
+    margin-bottom: 18px;
     font-family: 'Red Hat Display';
     font-size: 60px;
     line-height: 72px;
     letter-spacing: 0.5px;
 
     color: #FCFCFC;
-    color: green;
-    /* ПОТІМ ВИДАЛИТИ */
 }
 
 .sidebar-text {
@@ -234,8 +242,6 @@ ul {
     letter-spacing: 0.5px;
 
     color: #FCFCFC;
-    color: green;
-    /* ПОТІМ ВИДАЛИТИ */
 }
 
 /* STYLE OF LIST ARTICLES */
@@ -294,12 +300,28 @@ ul {
 
 .text-list {
     display: flex;
+    justify-content: center;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.5px;
+
     text-transform: uppercase;
 
     color: #B3B3B1;
+}
+
+.text-list>.icon-text {
+    display: flex;
+    align-items: center;
+}
+
+.icon-text:first-child {
+    margin-right: 22px;
+}
+
+.text-list .icon-list {
+    margin-right: 5px;
+    fill: currentColor;
 }
 
 /* STYLE OF FOOTER  */
@@ -361,6 +383,34 @@ ul {
 .footer-text.title {
     margin-bottom: 12px;
 
+}
+
+.footer-icons {
+    display: flex;
+    justify-content: center;
+}
+
+.footer-icons>.icon-item {
+    width: 37px;
+    height: 37px;
+}
+
+.icon-item:not(:last-child) {
+    margin-right: 6px;
+}
+
+.footer-icons .icon-link {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #0DD0BA;
+}
+
+.footer-icons .icon-footer {
+    fill: currentColor;
 }
 
 .lists-wrapper {
