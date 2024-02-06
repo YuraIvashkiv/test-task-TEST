@@ -361,6 +361,13 @@ button {
     color: #F9B936;
 }
 
+.banner-lists {
+    display: flex;
+    align-items: center;
+    padding-left: 56px;
+    padding-right: 33px;
+}
+
 .after-text {
     display: flex;
     align-items: center;
@@ -401,6 +408,7 @@ button {
     /* align-items: center; */
     padding-left: 11px;
     padding-right: 12px;
+    margin-left: auto;
     min-width: 269px;
     height: 35px;
     border-radius: 17px;
@@ -412,7 +420,8 @@ button {
     letter-spacing: 0.5px;
 
     color: #FFFFFF;
-    background-image: linear-gradient(to right, #FCC539 36%, #DC4A19 73%, #EBF6F5 70%)
+
+    background-image: linear-gradient(to right, rgba(220, 74, 25, 1) 0%, #FCC539 73%, #EBF6F5 73%);
 }
 
 .note-item {
