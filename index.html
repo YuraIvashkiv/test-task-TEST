@@ -103,9 +103,22 @@
     <section class="main-header">
       <div class="container main">
         <h2 class="visually-hidden">Main navigation</h2>
-        <a href="./index.html" class="logo-link">
-          <img src="./images/logo-opt.jpg" alt="logo" width="134" height="18" />
-        </a>
+
+        <div class="logo-button">
+          <a href="./index.html" class="logo-link">
+            <img
+              src="./images/logo-opt.jpg"
+              alt="logo"
+              width="134"
+              height="18"
+            />
+          </a>
+          <button class="menu-button">
+            <svg width="27" height="30" class="svg-menu">
+              <use href="./images/sprite.svg#icon-burger-opt"></use>
+            </svg>
+          </button>
+        </div>
         <nav>
           <ul class="main-list">
             <li class="main-item">
@@ -194,116 +207,243 @@
     </ul>
 
     <div class="container">
-      <div class="banner">
-        <div class="banner-box">
-          <img
-            src="./images/banner-img-opt.jpg"
-            alt="girl"
-            width="120"
-            height="120"
-          />
-          <div class="banner-wrapper">
-            <h2 class="banner-title">Lorem Ipsum is simply dummy</h2>
-            <ul class="banner-list">
-              <li class="banner-item">
-                <button class="banner-button android">
-                  <svg class="icon-svg" width="13" height="14">
-                    <use href="./images/sprite.svg#icon-android"></use>
-                  </svg>
-                  <p class="button-text">Android</p>
-                </button>
-              </li>
-              <li class="banner-item">
-                <button class="banner-button apple">
-                  <svg class="icon-svg apple" width="13" height="14">
-                    <use href="./images/sprite.svg#icon-apple"></use>
-                  </svg>
-                  <p class="button-text">IOS</p>
-                </button>
-              </li>
-              <li class="banner-item">
-                <button class="banner-button last">
-                  <svg class="icon-svg download" width="16" height="15">
-                    <use href="./images/sprite.svg#icon-download"></use>
-                  </svg>
-                  <p class="button-text">Download on PC</p>
-                </button>
-              </li>
-            </ul>
-          </div>
-          <div class="box-right">
-            <img
-              src="./images/banner-rating-opt.jpg"
-              alt="rating"
-              width="86"
-              height="85"
-            />
-            <div class="wrapper-right">
-              <h3 class="title-right">Players</h3>
-              <p class="text-right">12 votes</p>
-              <p class="text-right bold">
-                Your rating: <span class="number-right">5.2</span>
-              </p>
+      <div class="banner-general">
+        <div class="banner">
+          <div class="banner-box">
+            <picture>
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/banner-tablet-120.webp 1x,
+                  ./images/banner-tablet-240.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/banner-tablet-120-opt.jpg 1x,
+                  ./images/banner-tablet-240.jpg     2x
+                "
+                type="image/jpg"
+              />
+
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/banner-tablet-120.webp 1x,
+                  ./images/banner-tablet-240.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 768px)"
+                srcset="
+                  ./images/banner-tablet-120-opt.jpg 1x,
+                  ./images/banner-tablet-240.jpg     2x
+                "
+                type="image/jpg"
+              />
+
+              <source
+                media="(min-width: 480px)"
+                srcset="
+                  ./images/banner-img-89.webp  1x,
+                  ./images/banner-img-178.webp 2x
+                "
+                type="image/webp"
+              />
+              <source
+                media="(min-width: 380px)"
+                srcset="
+                  ./images/banner-img-opt.jpg 1x,
+                  ./images/banner-img-178.jpg 2x
+                "
+                type="image/jpg"
+              />
+              <img
+                src="./images/banner-img-opt.jpg"
+                alt="girl"
+                width="89"
+                height="89"
+              />
+            </picture>
+
+            <div class="box-wrapper">
+              <h2 class="banner-title">Lorem Ipsum is simply dummy</h2>
+              <ul class="banner-list">
+                <li class="banner-item">
+                  <button class="banner-button android">
+                    <svg class="icon-svg" width="13" height="14">
+                      <use href="./images/sprite.svg#icon-android"></use>
+                    </svg>
+                    <p class="button-text">Android</p>
+                  </button>
+                </li>
+                <li class="banner-item">
+                  <button class="banner-button apple">
+                    <svg class="icon-svg apple" width="13" height="14">
+                      <use href="./images/sprite.svg#icon-apple"></use>
+                    </svg>
+                    <p class="button-text">IOS</p>
+                  </button>
+                </li>
+                <li class="banner-item">
+                  <button class="banner-button last">
+                    <svg class="icon-svg download" width="16" height="15">
+                      <use href="./images/sprite.svg#icon-download"></use>
+                    </svg>
+                    <p class="button-text">Download on PC</p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+            <div class="box-right">
+              <img
+                src="./images/banner-rating-opt.jpg"
+                alt="rating"
+                width="86"
+                height="85"
+              />
+              <div class="wrapper-right">
+                <h3 class="title-right">Players</h3>
+                <p class="text-right">12 votes</p>
+                <p class="text-right bold">
+                  Your rating: <span class="number-right">5.2</span>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="after-text">
-        <div class="banner-lists">
-          <p class="after-banner">Lorem Ipsum is simply dummy</p>
-          <ul class="after-list">
-            <li class="after-item"><a href="#" class="link-after">item</a></li>
-            <li class="after-item"><a href="#" class="link-after">item</a></li>
-            <li class="after-item"><a href="#" class="link-after">item</a></li>
-            <li class="after-item"><a href="#" class="link-after">item</a></li>
+        <div class="after-text">
+          <div class="banner-lists">
+            <p class="after-banner">Lorem Ipsum is simply dummy</p>
+            <ul class="after-list">
+              <li class="after-item">
+                <a href="#" class="link-after">item</a>
+              </li>
+              <li class="after-item">
+                <a href="#" class="link-after">item</a>
+              </li>
+              <li class="after-item">
+                <a href="#" class="link-after">item</a>
+              </li>
+              <li class="after-item">
+                <a href="#" class="link-after">item</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="note-list">
+            <li class="note-item">Note</li>
+            <li class="note-item">1</li>
+            <li class="note-item">2</li>
+            <li class="note-item">3</li>
+            <li class="note-item">4</li>
+            <li class="note-item">5</li>
+            <li class="note-item">6</li>
+            <li class="note-item">7</li>
+            <li class="note-item dark">8</li>
+            <li class="note-item dark">9</li>
+            <li class="note-item dark">10</li>
           </ul>
         </div>
-        <ul class="note-list">
-          <li class="note-item">Note</li>
-          <li class="note-item">1</li>
-          <li class="note-item">2</li>
-          <li class="note-item">3</li>
-          <li class="note-item">4</li>
-          <li class="note-item">5</li>
-          <li class="note-item">6</li>
-          <li class="note-item">7</li>
-          <li class="note-item dark">8</li>
-          <li class="note-item dark">9</li>
-          <li class="note-item dark">10</li>
-        </ul>
+        <div class="more-info">
+          <p class="after-info">More info</p>
+          <svg width="20" height="16" class="svg-info">
+            <use href="./images/sprite.svg#icon-bunner-menu-opt"></use>
+          </svg>
+        </div>
       </div>
     </div>
     <main>
       <article class="section-article">
         <div class="container article-sidebar">
           <div class="article-info">
-            <p class="before-title">
-              Home > Lorem Ipsum is >
-              <span class="title-bold">Lorem Ipsum is simply dummy</span>
-            </p>
-            <h1 class="title">Lorem Ipsum is simply dummy</h1>
-            <p class="after-title">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries, but also the leap into
-              electronic typesetting, remaining essentially unchanged. It was
-              popularised in the 1960s with the release of Letraset sheets
-              containing Lorem Ipsum passages, and more recently with desktop
-              publishing software like Aldus PageMaker including versions of
-              Lorem Ipsum.
-            </p>
+            <div class="article-wrapper">
+              <p class="before-title">
+                Home > Lorem Ipsum is >
+                <span class="title-bold">Lorem Ipsum is simply dummy</span>
+              </p>
+              <h1 class="title">Lorem Ipsum is simply dummy</h1>
+              <p class="after-title">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book. It has
+                survived not only five centuries, but also the leap into
+                electronic typesetting, remaining essentially unchanged. It was
+                popularised in the 1960s with the release of Letraset sheets
+                containing Lorem Ipsum passages, and more recently with desktop
+                publishing software like Aldus PageMaker including versions of
+                Lorem Ipsum.
+              </p>
+            </div>
             <h3 class="title-secondary">Similar articles</h3>
             <ul class="articles-list">
               <li class="articles-item">
-                <img
-                  src="./images/fight-opt.jpg"
-                  alt="fight"
-                  width="347"
-                  height="171"
-                  class="articles-img"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.webp 1x,
+                      ./images/fight-desk-794.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.jpg     1x,
+                      ./images/fight-desk-794-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- mobile -->
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/fight-mob-310-opt.jpg"
+                    alt="fight"
+                    width="310"
+                    height="171"
+                    class="articles-img"
+                  />
+                </picture>
                 <p class="title-list">Lorem Ipsum is simply dummy</p>
                 <div class="text-list">
                   <p class="icon-text">
@@ -321,13 +461,69 @@
                 </div>
               </li>
               <li class="articles-item">
-                <img
-                  src="./images/fight-opt.jpg"
-                  alt="fight"
-                  width="347"
-                  height="171"
-                  class="articles-img"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.webp 1x,
+                      ./images/fight-desk-794.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.jpg     1x,
+                      ./images/fight-desk-794-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- mobile -->
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/fight-mob-310-opt.jpg"
+                    alt="fight"
+                    width="310"
+                    height="171"
+                    class="articles-img"
+                  />
+                </picture>
                 <p class="title-list">Lorem Ipsum is simply dummy</p>
                 <div class="text-list">
                   <p class="icon-text">
@@ -345,13 +541,69 @@
                 </div>
               </li>
               <li class="articles-item">
-                <img
-                  src="./images/fight-opt.jpg"
-                  alt="fight"
-                  width="347"
-                  height="171"
-                  class="articles-img"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.webp 1x,
+                      ./images/fight-desk-794.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.jpg     1x,
+                      ./images/fight-desk-794-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- mobile -->
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/fight-mob-310-opt.jpg"
+                    alt="fight"
+                    width="310"
+                    height="171"
+                    class="articles-img"
+                  />
+                </picture>
                 <p class="title-list">Lorem Ipsum is simply dummy</p>
                 <div class="text-list">
                   <p class="icon-text">
@@ -369,13 +621,69 @@
                 </div>
               </li>
               <li class="articles-item">
-                <img
-                  src="./images/fight-opt.jpg"
-                  alt="fight"
-                  width="347"
-                  height="171"
-                  class="articles-img"
-                />
+                <picture>
+                  <!-- desktop -->
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.webp 1x,
+                      ./images/fight-desk-794.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/fight-desk-347.jpg     1x,
+                      ./images/fight-desk-794-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <!-- mobile -->
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310.webp 1x,
+                      ./images/fight-mob-620.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 380px)"
+                    srcset="
+                      ./images/fight-mob-310-opt.jpg 1x,
+                      ./images/fight-mob-620-opt.jpg 2x
+                    "
+                    type="image/jpg"
+                  />
+
+                  <img
+                    src="./images/fight-mob-310-opt.jpg"
+                    alt="fight"
+                    width="310"
+                    height="171"
+                    class="articles-img"
+                  />
+                </picture>
                 <p class="title-list">Lorem Ipsum is simply dummy</p>
                 <div class="text-list">
                   <p class="icon-text">
@@ -403,100 +711,132 @@
     </main>
     <footer class="footer">
       <div class="container footer-container">
-        <h2 class="visually-hidden">Add information</h2>
-        <div class="footer-wrapper">
-          <div class="logo-wrapper">
-            <p class="footer-logo">LOGOTYPE</p>
+        <div class="footer-mob">
+          <h2 class="visually-hidden">Add information</h2>
+          <div class="footer-wrapper">
+            <div class="logo-wrapper">
+              <p class="footer-logo">LOGOTYPE</p>
+            </div>
+            <div class="title-text">
+              <p class="footer-text title">Lorem Ipsum is simply dummy</p>
+              <p class="footer-text">
+                when an unknown printer took a galley of type and scrambled it
+                to make a type specimen book. It has survived not only five
+              </p>
+            </div>
+            <ul class="footer-icons">
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="10" height="19">
+                    <use href="./images/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="18" height="14">
+                    <use href="./images/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="22" height="15">
+                    <use href="./images/sprite.svg#icon-youtube"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="27" height="22">
+                    <use href="./images/sprite.svg#icon-google-news"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="icon-item">
+                <a href="#" class="icon-link">
+                  <svg class="icon-footer" width="18" height="18">
+                    <use href="./images/sprite.svg#icon-wifi-side"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
           </div>
-          <div class="title-text">
-            <p class="footer-text title">Lorem Ipsum is simply dummy</p>
-            <p class="footer-text">
-              when an unknown printer took a galley of type and scrambled it to
-              make a type specimen book. It has survived not only five
+
+          <div class="copy-wrapper">
+            <div class="lists-wrapper">
+              <div class="footer-lists categhory">
+                <h3 class="footer-title">Categhory</h3>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 1</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 3</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 4</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 5</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 6</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-lists better">
+                <h3 class="footer-title">Play better</h3>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 1</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 2</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 3</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 4</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">item 5</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-lists">
+                <h3 class="footer-title">Useful links</h3>
+                <ul class="footer-list">
+                  <li class="footer-item">
+                    <a href="" class="footer-link">link</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">link</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">link</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">link</a>
+                  </li>
+                  <li class="footer-item">
+                    <a href="" class="footer-link">link</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="footer-copy">
+              Copyright &#169; 2024. Tous droits réservés.
             </p>
           </div>
-          <ul class="footer-icons">
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="10" height="19">
-                  <use href="./images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="18" height="14">
-                  <use href="./images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="18" height="18">
-                  <use href="./images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="22" height="15">
-                  <use href="./images/sprite.svg#icon-youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="27" height="22">
-                  <use href="./images/sprite.svg#icon-google-news"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="icon-item">
-              <a href="#" class="icon-link">
-                <svg class="icon-footer" width="18" height="18">
-                  <use href="./images/sprite.svg#icon-wifi-side"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-
-        <div class="copy-wrapper">
-          <div class="lists-wrapper">
-            <div class="footer-lists">
-              <h3 class="footer-title">Categhory</h3>
-              <ul class="footer-list">
-                <li><a href="" class="footer-link">item 1</a></li>
-                <li><a href="" class="footer-link">item 3</a></li>
-                <li><a href="" class="footer-link">item 4</a></li>
-                <li><a href="" class="footer-link">item 5</a></li>
-                <li><a href="" class="footer-link">item 6</a></li>
-              </ul>
-            </div>
-            <div class="footer-lists">
-              <h3 class="footer-title">Play better</h3>
-              <ul class="footer-list">
-                <li><a href="" class="footer-link">item 1</a></li>
-                <li><a href="" class="footer-link">item 2</a></li>
-                <li><a href="" class="footer-link">item 3</a></li>
-                <li><a href="" class="footer-link">item 4</a></li>
-                <li><a href="" class="footer-link">item 5</a></li>
-              </ul>
-            </div>
-            <div class="footer-lists">
-              <h3 class="footer-title">Useful links</h3>
-              <ul class="footer-list">
-                <li><a href="" class="footer-link">link</a></li>
-                <li><a href="" class="footer-link">link</a></li>
-                <li><a href="" class="footer-link">link</a></li>
-                <li><a href="" class="footer-link">link</a></li>
-                <li><a href="" class="footer-link">link</a></li>
-              </ul>
-            </div>
-          </div>
-          <p class="footer-copy">
-            Copyright &#169; 2024. Tous droits réservés.
-          </p>
         </div>
       </div>
     </footer>
