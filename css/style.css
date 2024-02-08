@@ -1,4 +1,8 @@
-:root {}
+:root {
+    --main-spacing: 0.5px;
+    --main-color: #707070;
+    --secondary-color: #FFFFFF;
+}
 
 
 
@@ -109,9 +113,9 @@ img {
         font-size: 14px;
         font-weight: 500;
         line-height: 1.3;
-        letter-spacing: 0.5px;
+        letter-spacing: var(--main-spacing);
 
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
@@ -164,7 +168,7 @@ img {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 .svg-list .icon-right {
@@ -230,7 +234,7 @@ img {
         font-weight: 500;
         font-size: 18px;
         line-height: 25px;
-        letter-spacing: 0.5px;
+        letter-spacing: var(--main-spacing);
         color: #2A86E5;
     }
 }
@@ -347,7 +351,7 @@ img {
     align-items: center;
     width: 100%;
     height: 100%;
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 @media screen and (min-width:1200px) {
@@ -404,9 +408,9 @@ img {
     font-size: 24px;
     font-weight: 700;
     line-height: 29px;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
 
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 @media screen and (min-width:768px) {
@@ -464,10 +468,10 @@ img {
         display: flex;
         align-items: center;
         justify-content: center;
-        border: 1px solid #FFFFFF;
+        border: 1px solid var(--secondary-color);
         border-radius: 17px;
         background-color: transparent;
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
@@ -483,7 +487,7 @@ img {
     .banner-button>.button-text {
         font-size: 14px;
         line-height: 1.3;
-        letter-spacing: 0.5px;
+        letter-spacing: var(--main-spacing);
     }
 }
 
@@ -520,7 +524,7 @@ img {
         font-size: 24px;
         font-weight: 800;
         line-height: 1.3;
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
@@ -529,7 +533,7 @@ img {
         font-size: 16px;
         font-weight: 400;
         line-height: 1.3;
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
@@ -595,14 +599,14 @@ img {
         width: 1px;
         height: 23px;
         margin-left: 19px;
-        background-color: #707070;
+        background-color: var(--main-color)
     }
 }
 
 @media screen and (min-width:1200px) {
     .link-after {
         margin-left: 17px;
-        color: #707070;
+        color: var(--main-color);
     }
 }
 
@@ -620,8 +624,8 @@ img {
         font-size: 12px;
         font-weight: 700;
         line-height: 14px;
-        letter-spacing: 0.5px;
-        color: #FFFFFF;
+        letter-spacing: var(--main-spacing);
+        color: var(--secondary-color);
         background-image: linear-gradient(to right, rgba(220, 74, 25, 1) 0%, #FCC539 73%, #EBF6F5 73%);
     }
 }
@@ -639,14 +643,14 @@ img {
         width: 1px;
         height: 35px;
         display: block;
-        border: 1px solid #FFFFFF;
+        border: 1px solid var(--secondary-color);
     }
 }
 
 @media screen and (min-width:1200px) {
     .note-item.dark {
         background-color: rgba(235, 246, 245, 1);
-        color: #707070;
+        color: var(--main-color);
     }
 }
 
@@ -714,7 +718,7 @@ img {
     justify-content: center;
     align-items: center;
 
-    color: #707070;
+    color: var(--main-color);
 }
 
 @media screen and (min-width:1200px) {
@@ -735,7 +739,7 @@ img {
     border: none;
     height: 16px;
 
-    color: #707070;
+    color: var(--main-color);
 }
 
 .more-info .svg-info {
@@ -747,10 +751,10 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 1.3;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     text-align: center;
 
-    color: #707070;
+    color: var(--main-color);
 }
 
 @media screen and (min-width:768px) {
@@ -801,7 +805,7 @@ img {
     font-weight: 900;
     line-height: 46px;
     text-align: center;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
 
     color: #000000;
 }
@@ -819,9 +823,9 @@ img {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.6;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
 
-    color: #707070;
+    color: var(--main-color);
 }
 
 @media screen and (min-width:768px) {
@@ -840,8 +844,8 @@ img {
     margin-bottom: 20px;
     font-size: 20px;
     line-height: 1.3;
-    letter-spacing: 0.5px;
-    color: #707070;
+    letter-spacing: var(--main-spacing);
+    color: var(--main-color);
 }
 
 .title-secondary::after {
@@ -910,7 +914,7 @@ img {
     font-size: 22px;
     font-weight: 700;
     line-height: 26px;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     text-align: center;
     color: #2A86E5;
 }
@@ -932,7 +936,7 @@ img {
     justify-content: center;
     font-size: 14px;
     line-height: 14px;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     text-transform: uppercase;
     color: #B3B3B1;
 }
@@ -979,7 +983,7 @@ img {
         font-family: 'Red Hat Display';
         font-size: 60px;
         line-height: 72px;
-        letter-spacing: 0.5px;
+        letter-spacing: var(--main-spacing);
         color: #FCFCFC;
     }
 }
@@ -989,7 +993,7 @@ img {
         font-size: 40px;
         font-weight: 700;
         line-height: 0.6;
-        letter-spacing: 0.5px;
+        letter-spacing: var(--main-spacing);
         color: #FCFCFC;
     }
 }
@@ -1039,7 +1043,7 @@ img {
     width: 310px;
     height: 376px;
     border-radius: 20px;
-    background-color: #FFFFFF;
+    background-color: var(--secondary-color);
 
 }
 
@@ -1074,7 +1078,7 @@ img {
     text-align: center;
     font-size: 30px;
     line-height: 0.8;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     color: #000000;
 }
 
@@ -1122,7 +1126,7 @@ img {
     max-width: 253px;
     font-size: 16px;
     line-height: 1.4;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     color: #0DD0BA;
 }
 
@@ -1275,7 +1279,7 @@ img {
 @media screen and (min-width:1200px) {
     .footer-list {
         list-style: inside;
-        color: #FFFFFF;
+        color: var(--secondary-color);
     }
 }
 
@@ -1284,9 +1288,9 @@ img {
     font-size: 24px;
 
     line-height: 1.3;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
 
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 .footer-item:not(:last-child) {
@@ -1297,8 +1301,8 @@ img {
     font-size: 15px;
     font-weight: 400;
     line-height: 1.3;
-    letter-spacing: 0.5px;
-    color: #FFFFFF;
+    letter-spacing: var(--main-spacing);
+    color: var(--secondary-color);
 }
 
 .footer-copy {
@@ -1306,10 +1310,10 @@ img {
     font-style: italic;
     font-size: 13px;
     line-height: 1.3;
-    letter-spacing: 0.5px;
+    letter-spacing: var(--main-spacing);
     text-align: center;
 
-    color: #FFFFFF;
+    color: var(--secondary-color);
 }
 
 @media screen and (min-width:1200px) {
