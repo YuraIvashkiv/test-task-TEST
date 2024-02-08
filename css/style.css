@@ -988,6 +988,8 @@ img {
     .footer {
         margin-top: 28px;
         margin-bottom: 28px;
+
+        background-image: linear-gradient(to right, rgba(13, 208, 186, 1), rgba(42, 134, 229, 1));
     }
 }
 
@@ -995,6 +997,7 @@ img {
 .footer-mob {
     padding: 20px;
     border-radius: 40px;
+
     background-image: linear-gradient(to right, rgba(13, 208, 186, 1), rgba(42, 134, 229, 1));
 }
 
@@ -1013,6 +1016,8 @@ img {
         padding-bottom: 20px;
         display: flex;
         align-items: center;
+        padding-left: 0;
+        padding-right: 0;
     }
 }
 
@@ -1177,6 +1182,31 @@ img {
     .lists-wrapper {
         display: flex;
         margin-bottom: 32px;
+        text-align: start;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .lists-wrapper {
+        margin-right: 69px;
+        margin-bottom: 29px;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .footer-lists {
+        width: 190px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-lists {
+        padding-top: 45px;
+        padding-right: 15px;
+        padding-bottom: 35px;
+        padding-left: 15px;
+        width: 100%;
     }
 }
 
@@ -1190,6 +1220,12 @@ img {
     }
 }
 
+@media screen and (min-width:1200px) {
+    .footer-lists.categhory {
+        margin-right: 108px;
+    }
+}
+
 .footer-lists.better {
     margin-bottom: 21px;
 }
@@ -1200,15 +1236,34 @@ img {
     }
 }
 
-@media screen and (min-width:768px) {
-    .footer-lists {
-        width: 190px;
+@media screen and (min-width:1200px) {
+    .footer-lists.useful {
+        min-width: 166px;
     }
 }
 
 @media screen and (min-width:768px) {
     .footer-lists+.footer-lists {
         margin-left: 49px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-lists+.footer-lists {
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-lists.better {
+        min-width: 256px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .footer-list {
+        list-style: inside;
+        color: #FFFFFF;
     }
 }
 
@@ -1243,4 +1298,10 @@ img {
     text-align: center;
 
     color: #FFFFFF;
+}
+
+@media screen and (min-width:1200px) {
+    .footer-copy {
+        text-align: start;
+    }
 }
