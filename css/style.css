@@ -693,6 +693,7 @@ img {
     .banner {
         background-image:
             url(../images/banner-bg-mob2x.png), url(../images/banner-img-mob-2x-opt.jpg);
+        background-size: cover;
     }
 }
 
