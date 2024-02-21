@@ -1,0 +1,24 @@
+[33mb834185[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{0}: reset: moving to HEAD^
+[33m0a36e7d[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{1}: reset: moving to HEAD^
+[33m43cd5d7[m HEAD@{2}: commit: add changes
+[33m0a36e7d[m[33m ([m[1;31morigin/main[m[33m)[m HEAD@{3}: commit: add root
+[33mb834185[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m HEAD@{4}: commit: add button to more-info
+[33m38376ec[m HEAD@{5}: commit: finish adaptiv markup
+[33m88abc0a[m HEAD@{6}: commit: add retina for bg-images
+[33m8aa4598[m HEAD@{7}: commit: did mobile version
+[33m6cf6c20[m HEAD@{8}: commit: added note-list
+[33mda2cd3d[m HEAD@{9}: commit: did desktop page
+[33ma42e887[m HEAD@{10}: commit: did social networks of side
+[33mc4eae43[m HEAD@{11}: commit: add after-banner-text
+[33m6f15ae0[m HEAD@{12}: commit: started banner
+[33m5d5cd98[m HEAD@{13}: commit: add size for banner
+[33m4721fe1[m HEAD@{14}: commit: add icons for footer
+[33m075265d[m HEAD@{15}: commit: add form-search
+[33m4f1b748[m HEAD@{16}: commit: add header: icons
+[33m2a8134f[m HEAD@{17}: commit: add svg-icons
+[33mc70b4d4[m HEAD@{18}: commit: setting link of footer
+[33m3759530[m HEAD@{19}: commit: add background-color to footer
+[33me0476c0[m HEAD@{20}: commit: add changes to similar articles
+[33m4e908e6[m HEAD@{21}: commit: add flex to header
+[33md8ac916[m HEAD@{22}: commit: add other fonts
+[33m980df3f[m HEAD@{23}: commit (initial): add markup and font
